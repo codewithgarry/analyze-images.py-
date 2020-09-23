@@ -136,7 +136,7 @@ python3 analyze-images.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
 
 
 ------------------>>>>>>>>>>>>>>>>>>>>Go to BigQuery, run:
-SELECT locale, COUNT(locale) as OCCURENCE FROM `<QWIKLABS_PROJECT_ID>.image_classification_dataset.image_text_detail` GROUP BY locale
+SELECT locale,COUNT(locale) as lcount FROM image_classification_dataset.image_text_detail GROUP BY locale ORDER BY lcount DESC
 
 
 
